@@ -1,3 +1,9 @@
+openssl (1.1.1f-1ubuntu2.1bb1) focal; urgency=medium
+
+  * Balabit patched version
+
+ -- Balabit Platform Team <devnull@dev.null>  Wed, 16 Dec 2020 18:47:12 +0100
+
 openssl (1.1.1f-1ubuntu2.1) focal-security; urgency=medium
 
   * SECURITY UPDATE: EDIPARTYNAME NULL pointer de-ref
