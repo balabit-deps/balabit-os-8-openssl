@@ -1,3 +1,9 @@
+openssl (1.1.1f-1ubuntu2.2bb2) focal; urgency=medium
+
+  * Balabit patched version
+
+ -- Balabit Platform Team <devnull@dev.null>  Tue, 09 Mar 2021 17:31:00 +0100
+
 openssl (1.1.1f-1ubuntu2.2bb1) focal; urgency=medium
 
   * Balabit patched version
