@@ -1,3 +1,14 @@
+openssl (1.1.1f-1ubuntu2.4) focal; urgency=medium
+
+  * Allow x509 certificates which set basicConstraints=CA:FALSE,pathlen:0
+    to validate, as it is common on self-signed leaf certificates.
+    (LP: #1926254)
+    - d/p/lp-1926254-1-Allow-certificates-with-Basic-Constraints-CA-fa.patch
+    - d/p/lp-1926254-2-Set-X509_V_ERR_INVALID_EXTENSION-error-for-inva.patch
+    - d/p/lp-1926254-3-Add-test-cases-for-the-non-CA-certificate-with-.patch
+
+ -- Matthew Ruffell <matthew.ruffell@canonical.com>  Wed, 28 Apr 2021 12:37:28 +1200
+
 openssl (1.1.1f-1ubuntu2.3bb1) focal; urgency=medium
 
   * Balabit patched version
