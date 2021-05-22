@@ -1,3 +1,9 @@
+openssl (1.1.1f-1ubuntu2.4bb1) focal; urgency=medium
+
+  * Balabit patched version
+
+ -- Balabit Platform Team <devnull@dev.null>  Sat, 22 May 2021 16:22:26 +0200
+
 openssl (1.1.1f-1ubuntu2.4) focal; urgency=medium
 
   * Allow x509 certificates which set basicConstraints=CA:FALSE,pathlen:0
