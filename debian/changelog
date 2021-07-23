@@ -1,3 +1,9 @@
+openssl (1.1.1f-1ubuntu2.5) focal; urgency=medium
+
+  * Cherry-pick an upstream patch to fix s390x AES code (LP: #1931994)
+
+ -- Simon Chopin <simon.chopin@canonical.com>  Fri, 23 Jul 2021 14:32:42 +0200
+
 openssl (1.1.1f-1ubuntu2.4) focal; urgency=medium
 
   * Allow x509 certificates which set basicConstraints=CA:FALSE,pathlen:0
