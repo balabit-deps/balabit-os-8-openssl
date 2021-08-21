@@ -1,3 +1,9 @@
+openssl (1.1.1f-1ubuntu2.5bb1) focal; urgency=medium
+
+  * Balabit patched version
+
+ -- Balabit Platform Team <devnull@dev.null>  Sat, 21 Aug 2021 16:27:44 +0200
+
 openssl (1.1.1f-1ubuntu2.5) focal; urgency=medium
 
   * Cherry-pick an upstream patch to fix s390x AES code (LP: #1931994)
