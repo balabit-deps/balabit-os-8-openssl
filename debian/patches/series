@@ -53,3 +53,4 @@ CVE-2021-3449-4.patch
 lp-1926254-1-Allow-certificates-with-Basic-Constraints-CA-fa.patch
 lp-1926254-2-Set-X509_V_ERR_INVALID_EXTENSION-error-for-inva.patch
 lp-1926254-3-Add-test-cases-for-the-non-CA-certificate-with-.patch
+lp1931994-s390x-evp-init-fix.patch
