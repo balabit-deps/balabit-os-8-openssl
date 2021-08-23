@@ -1,3 +1,52 @@
+openssl (1.1.1f-1ubuntu2.8) focal-security; urgency=medium
+
+  * SECURITY UPDATE: SM2 Decryption Buffer Overflow
+    - debian/patches/CVE-2021-3711-1.patch: correctly calculate the length
+      of SM2 plaintext given the ciphertext in crypto/sm2/sm2_crypt.c,
+      crypto/sm2/sm2_pmeth.c, include/crypto/sm2.h,
+      test/sm2_internal_test.c.
+    - debian/patches/CVE-2021-3711-2.patch: extend tests for SM2 decryption
+      in test/recipes/30-test_evp_data/evppkey.txt.
+    - debian/patches/CVE-2021-3711-3.patch: check the plaintext buffer is
+      large enough when decrypting SM2 in crypto/sm2/sm2_crypt.c.
+    - CVE-2021-3711
+  * SECURITY UPDATE: Read buffer overrun in X509_aux_print()
+    - debian/patches/CVE-2021-3712.patch: fix a read buffer overrun in
+      X509_aux_print() in crypto/x509/t_x509.c.
+    - debian/patches/CVE-2021-3712-2.patch: fix i2v_GENERAL_NAME to not
+      assume NUL terminated strings in crypto/x509v3/v3_alt.c,
+      crypto/x509v3/v3_utl.c, include/crypto/x509.h.
+    - debian/patches/CVE-2021-3712-3.patch: fix POLICYINFO printing to not
+      assume NUL terminated strings in crypto/x509v3/v3_cpols.c.
+    - debian/patches/CVE-2021-3712-4.patch: fix printing of
+      PROXY_CERT_INFO_EXTENSION to not assume NUL terminated strings in
+      crypto/x509v3/v3_pci.c.
+    - debian/patches/CVE-2021-3712-5.patch: fix the name constraints code
+      to not assume NUL terminated strings in crypto/x509v3/v3_ncons.c.
+    - debian/patches/CVE-2021-3712-6.patch: fix test code to not assume NUL
+      terminated strings in test/x509_time_test.c.
+    - debian/patches/CVE-2021-3712-7.patch: fix append_ia5 function to not
+      assume NUL terminated strings in crypto/x509v3/v3_utl.c.
+    - debian/patches/CVE-2021-3712-8.patch: fix NETSCAPE_SPKI_print
+      function to not assume NUL terminated strings in
+      crypto/asn1/t_spki.c.
+    - debian/patches/CVE-2021-3712-9.patch: fix
+      EC_GROUP_new_from_ecparameters to check the base length in
+      crypto/ec/ec_asn1.c.
+    - debian/patches/CVE-2021-3712-10.patch: allow fuzz builds to detect
+      string overruns in crypto/asn1/asn1_lib.c.
+    - debian/patches/CVE-2021-3712-11.patch: fix the error handling in
+      i2v_AUTHORITY_KEYID in crypto/x509v3/v3_akey.c.
+    - debian/patches/CVE-2021-3712-12.patch: allow fuzz builds to detect
+      string overruns in crypto/asn1/asn1_lib.c.
+    - debian/patches/CVE-2021-3712-13.patch: fix the name constraints code
+      to not assume NUL terminated strings in crypto/x509v3/v3_ncons.c.
+    - debian/patches/CVE-2021-3712-14.patch: fix i2v_GENERAL_NAME to not
+      assume NUL terminated strings in crypto/x509v3/v3_utl.c.
+    - CVE-2021-3712
+
+ -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 23 Aug 2021 13:02:39 -0400
+
 openssl (1.1.1f-1ubuntu2.5) focal; urgency=medium
 
   * Cherry-pick an upstream patch to fix s390x AES code (LP: #1931994)
