@@ -1,3 +1,10 @@
+openssl (1.1.1f-1ubuntu2.9) focal; urgency=medium
+
+  * Cherry-pick stable patches to fix potential use-after-free. LP:
+    #1940656
+
+ -- Dimitri John Ledkov <dimitri.ledkov@canonical.com>  Wed, 25 Aug 2021 02:13:44 +0100
+
 openssl (1.1.1f-1ubuntu2.8) focal-security; urgency=medium
 
   * SECURITY UPDATE: SM2 Decryption Buffer Overflow

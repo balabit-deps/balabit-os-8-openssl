@@ -72,3 +72,7 @@ CVE-2021-3712-11.patch
 CVE-2021-3712-12.patch
 CVE-2021-3712-13.patch
 CVE-2021-3712-14.patch
+lp-1940656-1-srp-fix-double-free.patch
+lp-1940656-2-ts-fix-double-free-on-error-path.patch
+lp-1940656-3-engine-fix-double-free-on-error-path.patch
+lp-1940656-4-Prevent-use-after-free-of-global_engine_lock.patch
