@@ -1,3 +1,9 @@
+openssl (1.1.1f-1ubuntu2.8bb1) focal; urgency=medium
+
+  * Balabit patched version
+
+ -- Balabit Platform Team <devnull@dev.null>  Sat, 28 Aug 2021 16:22:05 +0200
+
 openssl (1.1.1f-1ubuntu2.8) focal-security; urgency=medium
 
   * SECURITY UPDATE: SM2 Decryption Buffer Overflow
