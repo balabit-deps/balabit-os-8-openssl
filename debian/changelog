@@ -1,3 +1,9 @@
+openssl (1.1.1f-1ubuntu2.9bb1) focal; urgency=medium
+
+  * Balabit patched version
+
+ -- Balabit Platform Team <devnull@dev.null>  Tue, 16 Nov 2021 18:14:02 +0100
+
 openssl (1.1.1f-1ubuntu2.9) focal; urgency=medium
 
   * Cherry-pick stable patches to fix potential use-after-free. LP:
