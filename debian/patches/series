@@ -75,3 +75,6 @@ lp-1940656-1-srp-fix-double-free.patch
 lp-1940656-2-ts-fix-double-free-on-error-path.patch
 lp-1940656-3-engine-fix-double-free-on-error-path.patch
 lp-1940656-4-Prevent-use-after-free-of-global_engine_lock.patch
+double-engine-load.patch
+more-testing-dgst.patch
+double-engine-load-test.patch
