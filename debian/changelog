@@ -1,3 +1,9 @@
+openssl (1.1.1f-1ubuntu2.10bb1) focal; urgency=medium
+
+  * Balabit patched version
+
+ -- Balabit Platform Team <devnull@dev.null>  Sat, 11 Dec 2021 16:24:04 +0100
+
 openssl (1.1.1f-1ubuntu2.10) focal; urgency=medium
 
   * Cherry-pick upstream fixes to prevent double engine loading (LP: #1951943)
