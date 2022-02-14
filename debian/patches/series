@@ -79,3 +79,4 @@ lp-1940656-4-Prevent-use-after-free-of-global_engine_lock.patch
 double-engine-load.patch
 more-testing-dgst.patch
 double-engine-load-test.patch
+lp-1960863-crypto-poly1305-asm-fix-armv8-pointer-authenticat.patch

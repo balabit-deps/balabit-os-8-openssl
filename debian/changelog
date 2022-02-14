@@ -1,3 +1,11 @@
+openssl (1.1.1f-1ubuntu2.11) focal; urgency=medium
+
+  * Fixup pointer authentication for armv8 systems that support it when
+    using the poly1305 MAC, preventing segmentation faults. (LP: #1960863)
+    - d/p/lp-1960863-crypto-poly1305-asm-fix-armv8-pointer-authenticat.patch  
+
+ -- Matthew Ruffell <matthew.ruffell@canonical.com>  Tue, 15 Feb 2022 10:10:01 +1300
+
 openssl (1.1.1f-1ubuntu2.10) focal; urgency=medium
 
   * Cherry-pick upstream fixes to prevent double engine loading (LP: #1951943)
