@@ -1,3 +1,16 @@
+openssl (1.1.1f-1ubuntu2.12) focal-security; urgency=medium
+
+  * SECURITY UPDATE: Infinite loop in BN_mod_sqrt()
+    - debian/patches/CVE-2022-0778-1.patch: fix infinite loop in
+      crypto/bn/bn_sqrt.c.
+    - debian/patches/CVE-2022-0778-2.patch: add documentation of
+      BN_mod_sqrt() in doc/man3/BN_add.pod.
+    - debian/patches/CVE-2022-0778-3.patch: add a negative testcase for
+      BN_mod_sqrt in test/bntest.c, test/recipes/10-test_bn_data/bnmod.txt.
+    - CVE-2022-0778
+
+ -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 09 Mar 2022 07:12:45 -0500
+
 openssl (1.1.1f-1ubuntu2.11) focal; urgency=medium
 
   * Fixup pointer authentication for armv8 systems that support it when
