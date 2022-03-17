@@ -34,6 +34,7 @@ c_rehash-compat.patch
 
 # Ubuntu patches
 tests-use-seclevel-1.patch
+tls1.2-min-seclevel2.patch
 CVE-2020-1967-1.patch
 CVE-2020-1967-2.patch
 CVE-2020-1967-3.patch
