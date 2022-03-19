@@ -1,3 +1,9 @@
+openssl (1.1.1f-1ubuntu2.12bb1) focal; urgency=medium
+
+  * Balabit patched version
+
+ -- Balabit Platform Team <devnull@dev.null>  Sat, 19 Mar 2022 16:23:50 +0100
+
 openssl (1.1.1f-1ubuntu2.12) focal-security; urgency=medium
 
   * SECURITY UPDATE: Infinite loop in BN_mod_sqrt()
