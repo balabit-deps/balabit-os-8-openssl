@@ -82,3 +82,4 @@ lp-1960863-crypto-poly1305-asm-fix-armv8-pointer-authenticat.patch
 CVE-2022-0778-1.patch
 CVE-2022-0778-2.patch
 CVE-2022-0778-3.patch
+CVE-2022-1292.patch

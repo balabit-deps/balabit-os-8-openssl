@@ -1,3 +1,12 @@
+openssl (1.1.1f-1ubuntu2.13) focal-security; urgency=medium
+
+  * SECURITY UPDATE: c_rehash script allows command injection
+    - debian/patches/CVE-2022-1292.patch: do not use shell to invoke
+      openssl in tools/c_rehash.in.
+    - CVE-2022-1292
+
+ -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Tue, 03 May 2022 13:49:36 -0400
+
 openssl (1.1.1f-1ubuntu2.12bb2) focal; urgency=medium
 
   * Revert the revert of the Balabit-specific change that allowed TLS1.0/1.1
