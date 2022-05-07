@@ -1,3 +1,9 @@
+openssl (1.1.1f-1ubuntu2.13bb1) focal; urgency=medium
+
+  * Balabit patched version
+
+ -- Balabit Platform Team <devnull@dev.null>  Sat, 07 May 2022 16:24:59 +0200
+
 openssl (1.1.1f-1ubuntu2.13) focal-security; urgency=medium
 
   * SECURITY UPDATE: c_rehash script allows command injection
