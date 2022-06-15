@@ -1,3 +1,24 @@
+openssl (1.1.1f-1ubuntu2.15) focal-security; urgency=medium
+
+  * SECURITY UPDATE: c_rehash script allows command injection
+    - debian/patches/CVE-2022-1292.patch: switch to upstream patch, and
+      apply it before c_rehash-compat.patch.
+    - debian/patches/CVE-2022-2068.patch: fix file operations in
+      tools/c_rehash.in.
+    - debian/patches/c_rehash-compat.patch: updated patch to apply after
+      the security updates.
+    - CVE-2022-2068
+
+ -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 15 Jun 2022 14:16:37 -0400
+
+openssl (1.1.1f-1ubuntu2.14) focal; urgency=medium
+
+  * d/p/lp1978093/*: renew some expiring test certificates (LP: #1978093)
+  * d/p/lp1947588.patch: Cherry-picked as our patches make it very easy to
+    trigger the underlying bug (LP: #1947588)
+
+ -- Simon Chopin <schopin@ubuntu.com>  Fri, 10 Jun 2022 10:11:25 +0200
+
 openssl (1.1.1f-1ubuntu2.13) focal-security; urgency=medium
 
   * SECURITY UPDATE: c_rehash script allows command injection

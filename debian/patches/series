@@ -29,7 +29,6 @@ debian-targets.patch
 man-section.patch
 no-symbolic.patch
 pic.patch
-c_rehash-compat.patch
 # Remove Set-systemwide-default-settings-for-libssl-users.patch, this is done differently
 
 # Ubuntu patches
@@ -83,4 +82,14 @@ lp-1960863-crypto-poly1305-asm-fix-armv8-pointer-authenticat.patch
 CVE-2022-0778-1.patch
 CVE-2022-0778-2.patch
 CVE-2022-0778-3.patch
+
+lp1978093/0001-Update-expired-SCT-certificates.patch
+lp1978093/0002-ct_test.c-Update-the-epoch-time.patch
+lp1978093/0003-Update-further-expiring-certificates-that-affect-tes.patch
+
+lp1947588.patch
+
 CVE-2022-1292.patch
+CVE-2022-2068.patch
+c_rehash-compat.patch
+
