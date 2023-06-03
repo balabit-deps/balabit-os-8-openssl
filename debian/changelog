@@ -1,3 +1,21 @@
+openssl (1.1.1f-1ubuntu2.19) focal-security; urgency=medium
+
+  * SECURITY UPDATE: Possible DoS translating ASN.1 object identifiers
+    - debian/patches/CVE-2023-2650.patch: restrict the size of OBJECT
+      IDENTIFIERs that OBJ_obj2txt will translate in
+      crypto/objects/obj_dat.c.
+    - CVE-2023-2650
+  * Replace CVE-2022-4304 fix with improved version
+    - debian/patches/CVE-2022-4304.patch: remove previous fix.
+    - debian/patches/CVE-2022-4304-1.patch: use alternative fix in
+      crypto/bn/bn_asm.c, crypto/bn/bn_blind.c, crypto/bn/bn_lib.c,
+      crypto/bn/bn_local.h, crypto/rsa/rsa_ossl.c.
+    - debian/patches/CVE-2022-4304-2.patch: re-add
+      BN_F_OSSL_BN_RSA_DO_UNBLIND which was incorrectly removed in
+      include/openssl/bnerr.h.
+
+ -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 24 May 2023 13:14:51 -0400
+
 openssl (1.1.1f-1ubuntu2.18bb1) focal; urgency=medium
 
   * Balabit patched version
