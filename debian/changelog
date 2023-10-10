@@ -1,3 +1,16 @@
+openssl (1.1.1f-1ubuntu2.20) focal-security; urgency=medium
+
+  * SECURITY UPDATE: denial of service
+    - debian/patches/CVE-2023-3446.patch: adds check to prevent the testing of
+      an excessively large modulus in DH_check().
+    - CVE-2023-3446
+  * SECURITY UPDATE: denial of service
+    - debian/patches/CVE-2023-3817.patch: adds check to prevent the testing of
+      invalid q values in DH_check().
+    - CVE-2023-3817
+
+ -- Ian Constantin <ian.constantin@canonical.com>  Tue, 10 Oct 2023 12:03:48 +0300
+
 openssl (1.1.1f-1ubuntu2.19) focal-security; urgency=medium
 
   * SECURITY UPDATE: Possible DoS translating ASN.1 object identifiers
