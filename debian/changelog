@@ -1,3 +1,9 @@
+openssl (1.1.1f-1ubuntu2.20bb1) focal; urgency=medium
+
+  * Balabit patched version
+
+ -- Balabit Platform Team <devnull@dev.null>  Sat, 28 Oct 2023 14:23:09 +0000
+
 openssl (1.1.1f-1ubuntu2.20) focal-security; urgency=medium
 
   * SECURITY UPDATE: denial of service
