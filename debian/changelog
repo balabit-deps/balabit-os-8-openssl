@@ -1,3 +1,9 @@
+openssl (1.1.1f-1ubuntu2.21bb1) focal; urgency=medium
+
+  * Balabit patched version
+
+ -- Balabit Platform Team <devnull@dev.null>  Sat, 10 Feb 2024 16:24:54 +0100
+
 openssl (1.1.1f-1ubuntu2.21) focal-security; urgency=medium
 
   * SECURITY UPDATE: Excessive time spent in DH check / generation with
