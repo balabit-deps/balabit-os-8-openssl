@@ -1,3 +1,19 @@
+openssl (1.1.1f-1ubuntu2.22) focal-security; urgency=medium
+
+  * SECURITY UPDATE: Implicit rejection for RSA PKCS#1 (LP: #2054090)
+    - debian/patches/openssl-1.1.1-pkcs1-implicit-rejection.patch:
+      Return deterministic random output instead of an error in case
+      there is a padding error in crypto/cms/cms_env.c,
+      crypto/pkcs7/pk7_doit.c, crypto/rsa/rsa_local.h,
+      crypto/rsa/rsa_ossl.c, crypto/rsa/rsa_pk1.c, crypto/rsa/rsa_pmeth.c,
+      doc/man1/pkeyutl.pod, doc/man1/rsautl.pod,
+      doc/man3/EVP_PKEY_CTX_ctrl.pod, doc/man3/EVP_PKEY_decrypt.pod,
+      doc/man3/RSA_padding_add_PKCS1_type_1.pod,
+      doc/man3/RSA_public_encrypt.pod, include/openssl/rsa.h and
+      test/recipes/30-test_evp_data/evppkey.txt.
+
+ -- David Fernandez Gonzalez <david.fernandezgonzalez@canonical.com>  Fri, 16 Feb 2024 16:41:31 +0100
+
 openssl (1.1.1f-1ubuntu2.21) focal-security; urgency=medium
 
   * SECURITY UPDATE: Excessive time spent in DH check / generation with
