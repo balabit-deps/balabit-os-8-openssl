@@ -1,3 +1,9 @@
+openssl (1.1.1f-1ubuntu2.23bb1) focal; urgency=medium
+
+  * Balabit patched version
+
+ -- Balabit Platform Team <devnull@dev.null>  Sat, 03 Aug 2024 14:55:07 +0000
+
 openssl (1.1.1f-1ubuntu2.23) focal-security; urgency=medium
 
   * SECURITY UPDATE: unbounded mem growth when processing TLSv1.3 sessions
