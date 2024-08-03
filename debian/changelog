@@ -1,3 +1,22 @@
+openssl (1.1.1f-1ubuntu2.23) focal-security; urgency=medium
+
+  * SECURITY UPDATE: unbounded mem growth when processing TLSv1.3 sessions
+    - debian/patches/CVE-2024-2511.patch: fix unconstrained session cache
+      growth in TLSv1.3 in ssl/ssl_lib.c, ssl/ssl_sess.c,
+      ssl/statem/statem_srvr.c.
+    - CVE-2024-2511
+  * SECURITY UPDATE: use after free with SSL_free_buffers
+    - debian/patches/CVE-2024-4741.patch: only free the read buffers if
+      we're not using them in ssl/record/rec_layer_s3.c,
+      ssl/record/record.h, ssl/ssl_lib.c.
+    - CVE-2024-4741
+  * SECURITY UPDATE: crash or memory disclosure via SSL_select_next_proto
+    - debian/patches/CVE-2024-5535.patch: validate provided client list in
+      ssl/ssl_lib.c.
+    - CVE-2024-5535
+
+ -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Tue, 30 Jul 2024 12:36:54 -0400
+
 openssl (1.1.1f-1ubuntu2.22bb1) focal; urgency=medium
 
   * Balabit patched version
