@@ -118,3 +118,5 @@ openssl-1.1.1-pkcs1-implicit-rejection.patch
 CVE-2024-2511.patch
 CVE-2024-4741.patch
 CVE-2024-5535.patch
+CVE-2024-9143.patch
+CVE-2024-13176.patch
