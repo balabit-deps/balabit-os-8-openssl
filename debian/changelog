@@ -1,3 +1,19 @@
+openssl (1.1.1f-1ubuntu2.24) focal-security; urgency=medium
+
+  * SECURITY UPDATE: Low-level invalid GF(2^m) parameters lead to OOB
+    memory access
+    - debian/patches/CVE-2024-9143.patch: harden BN_GF2m_poly2arr against
+      misuse in crypto/bn/bn_gf2m.c, test/ec_internal_test.c.
+    - CVE-2024-9143
+  * SECURITY UPDATE: A timing side-channel which could potentially allow
+    recovering the private key exists in the ECDSA signature computation
+    - debian/patches/CVE-2024-13176.patch: Fix timing side-channel in
+      ECDSA signature computation in crypto/bn/bn_exp.c,
+      crypto/ec/ec_lib.c, include/crypto/bn.h.
+    - CVE-2024-13176
+
+ -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 05 Feb 2025 08:26:48 -0500
+
 openssl (1.1.1f-1ubuntu2.23bb1) focal; urgency=medium
 
   * Balabit patched version
